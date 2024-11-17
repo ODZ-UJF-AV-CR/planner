@@ -153,7 +153,7 @@
         </predecessors>
       </task>
     </task>
-    <task id="14" name="Manufacturing and Testing PFM" note="" work="8179200" duration="5616000" start="20250721T170000Z" end="20260420T170000Z" work-start="20250722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="14" name="Manufacturing and Testing PFM" note="" work="8218800" duration="5184000" start="20250721T170000Z" end="20260330T170000Z" work-start="20250722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="15" name="PFM manufacturing" note="" work="864000" duration="864000" start="20250901T170000Z" end="20251013T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
         <predecessors>
           <predecessor id="1" predecessor-id="17" type="FS"/>
@@ -171,158 +171,166 @@
           <predecessor id="1" predecessor-id="6" type="FS"/>
         </predecessors>
       </task>
-      <task id="18" name="Transport package" note="" work="403200" duration="403200" start="20251013T170000Z" end="20251031T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="18" name="Transport package design" note="" work="403200" duration="403200" start="20251013T170000Z" end="20251031T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="15" type="FS"/>
         </predecessors>
       </task>
-      <task id="19" name="Calibration" note="" work="864000" duration="864000" start="20251124T170000Z" end="20260105T170000Z" work-start="20251125T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="19" name="Transport package manufacturing" note="" work="864000" duration="864000" start="20251031T170000Z" end="20251212T170000Z" work-start="20251103T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="35" type="FS"/>
+          <predecessor id="1" predecessor-id="18" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="20" name="Calibration" note="" work="864000" duration="864000" start="20251124T170000Z" end="20260105T170000Z" work-start="20251125T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="36" type="FS"/>
           <predecessor id="1" predecessor-id="15" type="FS"/>
         </predecessors>
       </task>
-      <task id="20" name="Testing" note="" work="3456000" duration="2160000" start="20260105T170000Z" end="20260420T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="21" name="Testing" note="" work="2631600" duration="1644800" start="20260105T170000Z" end="20260326T085140Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="19" type="FS"/>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
         </predecessors>
       </task>
-      <task id="21" name="Qualification documentation" note="" work="1728000" duration="1728000" start="20251013T170000Z" end="20260105T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="22" name="Qualification documentation" note="" work="1728000" duration="1728000" start="20251013T170000Z" end="20260105T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="16" type="FS"/>
         </predecessors>
       </task>
-      <task id="22" name="QAR (Qualification and Acceptance Review)" note="" work="0" duration="0" start="20260420T170000Z" end="20260420T170000Z" work-start="20260420T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="23" name="QAR (Qualification and Acceptance Review)" note="" work="0" duration="0" start="20260330T170000Z" end="20260330T170000Z" work-start="20260330T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
+          <predecessor id="1" predecessor-id="33" type="FS"/>
+          <predecessor id="1" predecessor-id="22" type="FS"/>
           <predecessor id="1" predecessor-id="21" type="FS"/>
-          <predecessor id="1" predecessor-id="20" type="FS"/>
         </predecessors>
       </task>
-      <task id="23" name="FM" note="" work="0" duration="0" start="20260420T170000Z" end="20260420T170000Z" work-start="20260420T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="24" name="FM" note="" work="0" duration="0" start="20260330T170000Z" end="20260330T170000Z" work-start="20260330T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="22" type="FS"/>
+          <predecessor id="1" predecessor-id="23" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="24" name="Dosimetry Display Unit (DDU) demonstrator" note="" work="6048000" duration="7488000" start="20250401T000000Z" end="20260330T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="25" name="Review of current prototype (TRL6)" note="" work="864000" duration="576000" start="20250401T000000Z" end="20250428T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="26" name="DDU electrical redesign &amp; Dosimeter extra PCB design" note="" work="864000" duration="864000" start="20250901T170000Z" end="20251013T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="25" name="Dosimetry Display Unit (DDU) demonstrator" note="" work="6048000" duration="7488000" start="20250401T000000Z" end="20260330T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="26" name="Review of current prototype (TRL6)" note="" work="864000" duration="576000" start="20250401T000000Z" end="20250428T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="27" name="DDU electrical redesign &amp; Dosimeter extra PCB design" note="" work="864000" duration="864000" start="20250901T170000Z" end="20251013T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="13" type="FS"/>
-          <predecessor id="1" predecessor-id="25" type="FS"/>
-        </predecessors>
-      </task>
-      <task id="27" name="DDU mechanical redesign" note="" work="864000" duration="864000" start="20250901T170000Z" end="20251013T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <predecessors>
-          <predecessor id="1" predecessor-id="13" type="FS"/>
-          <predecessor id="1" predecessor-id="25" type="FS"/>
-        </predecessors>
-      </task>
-      <task id="28" name="DDU FW redesign" note="" work="1728000" duration="1728000" start="20251013T170000Z" end="20260105T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS"/>
           <predecessor id="1" predecessor-id="26" type="FS"/>
-          <predecessor id="1" predecessor-id="25" type="FS"/>
         </predecessors>
       </task>
-      <task id="29" name="DDU EQM Manufacturing" note="" work="864000" duration="864000" start="20251013T170000Z" end="20251124T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <task id="28" name="DDU mechanical redesign" note="" work="864000" duration="864000" start="20250901T170000Z" end="20251013T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="29" name="DDU FW redesign" note="" work="1728000" duration="1728000" start="20251013T170000Z" end="20260105T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="27" type="FS"/>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
         </predecessors>
       </task>
-      <task id="30" name="DDU EQM" note="" work="0" duration="0" start="20260105T170000Z" end="20260105T170000Z" work-start="20260105T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="30" name="DDU EQM Manufacturing" note="" work="864000" duration="864000" start="20251013T170000Z" end="20251124T170000Z" work-start="20251014T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
         <predecessors>
           <predecessor id="1" predecessor-id="28" type="FS"/>
-          <predecessor id="1" predecessor-id="29" type="FS"/>
         </predecessors>
       </task>
-      <task id="31" name="DDU Testing" note="" work="864000" duration="1728000" start="20260105T170000Z" end="20260330T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="31" name="DDU EQM" note="" work="0" duration="0" start="20260105T170000Z" end="20260105T170000Z" work-start="20260105T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="30" type="FS"/>
           <predecessor id="1" predecessor-id="29" type="FS"/>
+          <predecessor id="1" predecessor-id="30" type="FS"/>
         </predecessors>
       </task>
-      <task id="32" name="DDU FM" note="" work="0" duration="0" start="20260330T170000Z" end="20260330T170000Z" work-start="20260330T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="32" name="DDU Testing" note="" work="864000" duration="1728000" start="20260105T170000Z" end="20260330T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="31" type="FS"/>
+          <predecessor id="1" predecessor-id="30" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="33" name="DDU FM" note="" work="0" duration="0" start="20260330T170000Z" end="20260330T170000Z" work-start="20260330T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="32" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="33" name="Operations Preparation" note="" work="6739200" duration="7632000" start="20250428T170000Z" end="20260504T170000Z" work-start="20250429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="34" name="Detector response simulation" note="" work="1728000" duration="1728000" start="20250428T170000Z" end="20250721T170000Z" work-start="20250429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+    <task id="34" name="Operations Preparation" note="" work="6739200" duration="7430400" start="20250428T170000Z" end="20260423T170000Z" work-start="20250429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="35" name="Detector response simulation" note="" work="1728000" duration="1728000" start="20250428T170000Z" end="20250721T170000Z" work-start="20250429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
         <predecessors>
           <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
       </task>
-      <task id="35" name="Development of Hp calculation method" note="" work="1728000" duration="1728000" start="20250901T170000Z" end="20251124T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="36" name="Development of Hp calculation method" note="" work="1728000" duration="1728000" start="20250901T170000Z" end="20251124T170000Z" work-start="20250902T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="44" type="FS"/>
-          <predecessor id="1" predecessor-id="13" type="FS"/>
+          <predecessor id="1" predecessor-id="45" type="FS"/>
         </predecessors>
       </task>
-      <task id="36" name="Hp calculation method verification" note="" work="864000" duration="1728000" start="20260105T170000Z" end="20260330T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="37" name="Hp calculation method verification" note="" work="1152000" duration="1440000" start="20260105T170000Z" end="20260316T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="19" type="FS"/>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
         </predecessors>
       </task>
-      <task id="37" name="Operating manual &amp; Worksheets" note="" work="576000" duration="1152000" start="20260105T170000Z" end="20260302T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="38" name="Operating manual &amp; Worksheets" note="" work="576000" duration="1152000" start="20260105T170000Z" end="20260302T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="30" type="FS"/>
+          <predecessor id="1" predecessor-id="31" type="FS"/>
           <predecessor id="1" predecessor-id="15" type="FS"/>
         </predecessors>
       </task>
-      <task id="38" name="Support of crew training" note="" work="403200" duration="806400" start="20260302T170000Z" end="20260409T170000Z" work-start="20260303T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="39" name="Support of crew training" note="" work="403200" duration="806400" start="20260302T170000Z" end="20260409T170000Z" work-start="20260303T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="37" type="FS"/>
+          <predecessor id="1" predecessor-id="38" type="FS"/>
         </predecessors>
       </task>
-      <task id="39" name="Payload integration" note="" work="864000" duration="2160000" start="20260105T170000Z" end="20260420T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="40" name="Payload integration" note="" work="576000" duration="1440000" start="20260105T170000Z" end="20260316T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="30" type="FS"/>
+          <predecessor id="1" predecessor-id="31" type="FS"/>
           <predecessor id="1" predecessor-id="16" type="FS"/>
         </predecessors>
       </task>
-      <task id="40" name="Support to real time works" note="" work="576000" duration="288000" start="20260420T170000Z" end="20260504T170000Z" work-start="20260421T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="41" name="Support to real time works" note="" work="576000" duration="288000" start="20260409T170000Z" end="20260423T170000Z" work-start="20260410T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
+          <predecessor id="1" predecessor-id="42" type="FS"/>
+          <predecessor id="1" predecessor-id="39" type="FS"/>
+          <predecessor id="1" predecessor-id="24" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="42" name="CoFR (Certificate of Flight Readiness)" note="" work="0" duration="0" start="20260330T170000Z" end="20260330T170000Z" work-start="20260330T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="33" type="FS"/>
+          <predecessor id="1" predecessor-id="24" type="FS"/>
+          <predecessor id="1" predecessor-id="40" type="FS"/>
           <predecessor id="1" predecessor-id="38" type="FS"/>
-          <predecessor id="1" predecessor-id="23" type="FS"/>
-        </predecessors>
-      </task>
-      <task id="41" name="CoFR (Certificate of Flight Readiness)" note="" work="0" duration="0" start="20260302T170000Z" end="20260302T170000Z" work-start="20260302T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
-        <predecessors>
-          <predecessor id="1" predecessor-id="37" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="42" name="Outreach" note="" work="9820800" duration="8096000" start="20250401T000000Z" end="20260429T085320Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="43" name="Outreach planning" note="" work="864000" duration="864000" start="20250401T000000Z" end="20250512T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="44" name="Studens lectures/experiments" note="" work="864000" duration="864000" start="20250721T170000Z" end="20250901T170000Z" work-start="20250722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="43" name="Outreach" note="" work="9244800" duration="8096000" start="20250401T000000Z" end="20260429T085320Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="44" name="Outreach planning" note="" work="864000" duration="864000" start="20250401T000000Z" end="20250512T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="45" name="Studens lectures/experiments" note="" work="864000" duration="864000" start="20250721T170000Z" end="20250901T170000Z" work-start="20250722T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="34" type="FS"/>
+          <predecessor id="1" predecessor-id="35" type="FS"/>
         </predecessors>
       </task>
-      <task id="45" name="Outreach activities" note="" work="5731200" duration="6368000" start="20250623T170000Z" end="20260429T085320Z" work-start="20250624T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="46" name="Outreach activities" note="" work="5731200" duration="6368000" start="20250623T170000Z" end="20260429T085320Z" work-start="20250624T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="48" type="FS"/>
+          <predecessor id="1" predecessor-id="49" type="FS"/>
         </predecessors>
       </task>
-      <task id="46" name="Colaboration with ESERO" note="" work="633600" duration="6336000" start="20250623T170000Z" end="20260427T170000Z" work-start="20250624T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="47" name="Colaboration with ESERO" note="" work="633600" duration="6336000" start="20250623T170000Z" end="20260427T170000Z" work-start="20250624T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="48" type="FS"/>
+          <predecessor id="1" predecessor-id="49" type="FS"/>
         </predecessors>
       </task>
-      <task id="47" name="Support of PR materials creation" note="" work="864000" duration="1728000" start="20260105T170000Z" end="20260330T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="48" name="Support of PR materials creation" note="" work="288000" duration="1440000" start="20260105T170000Z" end="20260316T170000Z" work-start="20260106T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="19" type="FS"/>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
         </predecessors>
       </task>
-      <task id="48" name="Web presentation" note="" work="864000" duration="864000" start="20250512T170000Z" end="20250623T170000Z" work-start="20250513T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="49" name="Web presentation" note="" work="864000" duration="864000" start="20250512T170000Z" end="20250623T170000Z" work-start="20250513T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="43" type="FS"/>
+          <predecessor id="1" predecessor-id="44" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="49" name="Project management" note="" work="8064000" duration="8064000" start="20250401T000000Z" end="20260427T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="50" name="Management" note="" work="8064000" duration="8064000" start="20250401T000000Z" end="20260427T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="50" name="Project management" note="" work="8064000" duration="8064000" start="20250401T000000Z" end="20260427T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="51" name="Management" note="" work="8064000" duration="8064000" start="20250401T000000Z" end="20260427T170000Z" work-start="20250401T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
   </tasks>
   <resource-groups>
@@ -351,47 +359,48 @@
     <resource group="8" id="13" name="PR Team" short-name="PR" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
-    <allocation task-id="20" resource-id="1" units="80"/>
-    <allocation task-id="39" resource-id="1" units="20"/>
-    <allocation task-id="25" resource-id="1" units="50"/>
-    <allocation task-id="26" resource-id="1" units="100"/>
+    <allocation task-id="21" resource-id="1" units="80"/>
+    <allocation task-id="40" resource-id="1" units="20"/>
+    <allocation task-id="26" resource-id="1" units="50"/>
+    <allocation task-id="27" resource-id="1" units="100"/>
     <allocation task-id="12" resource-id="1" units="100"/>
     <allocation task-id="5" resource-id="1" units="100"/>
     <allocation task-id="3" resource-id="1" units="50"/>
-    <allocation task-id="20" resource-id="2" units="80"/>
-    <allocation task-id="39" resource-id="2" units="20"/>
-    <allocation task-id="25" resource-id="2" units="50"/>
-    <allocation task-id="27" resource-id="2" units="100"/>
+    <allocation task-id="21" resource-id="2" units="80"/>
+    <allocation task-id="40" resource-id="2" units="20"/>
+    <allocation task-id="26" resource-id="2" units="50"/>
+    <allocation task-id="28" resource-id="2" units="100"/>
     <allocation task-id="18" resource-id="2" units="100"/>
     <allocation task-id="12" resource-id="2" units="100"/>
     <allocation task-id="6" resource-id="2" units="100"/>
     <allocation task-id="4" resource-id="2" units="100"/>
     <allocation task-id="3" resource-id="2" units="50"/>
-    <allocation task-id="36" resource-id="4" units="50"/>
-    <allocation task-id="40" resource-id="4" units="100"/>
-    <allocation task-id="44" resource-id="4" units="100"/>
-    <allocation task-id="34" resource-id="4" units="100"/>
-    <allocation task-id="25" resource-id="4" units="50"/>
-    <allocation task-id="47" resource-id="4" units="50"/>
+    <allocation task-id="37" resource-id="4" units="80"/>
+    <allocation task-id="41" resource-id="4" units="100"/>
+    <allocation task-id="45" resource-id="4" units="100"/>
     <allocation task-id="35" resource-id="4" units="100"/>
-    <allocation task-id="19" resource-id="4" units="100"/>
+    <allocation task-id="26" resource-id="4" units="50"/>
+    <allocation task-id="48" resource-id="4" units="20"/>
+    <allocation task-id="36" resource-id="4" units="100"/>
+    <allocation task-id="20" resource-id="4" units="100"/>
     <allocation task-id="3" resource-id="4" units="50"/>
-    <allocation task-id="28" resource-id="6" units="100"/>
+    <allocation task-id="29" resource-id="6" units="100"/>
     <allocation task-id="11" resource-id="6" units="100"/>
-    <allocation task-id="40" resource-id="8" units="100"/>
+    <allocation task-id="41" resource-id="8" units="100"/>
+    <allocation task-id="39" resource-id="8" units="50"/>
+    <allocation task-id="32" resource-id="8" units="50"/>
     <allocation task-id="38" resource-id="8" units="50"/>
-    <allocation task-id="31" resource-id="8" units="50"/>
-    <allocation task-id="37" resource-id="8" units="50"/>
-    <allocation task-id="21" resource-id="8" units="100"/>
-    <allocation task-id="50" resource-id="10" units="100"/>
-    <allocation task-id="29" resource-id="11" units="100"/>
+    <allocation task-id="22" resource-id="8" units="100"/>
+    <allocation task-id="51" resource-id="10" units="100"/>
+    <allocation task-id="19" resource-id="11" units="100"/>
+    <allocation task-id="30" resource-id="11" units="100"/>
     <allocation task-id="17" resource-id="11" units="100"/>
     <allocation task-id="15" resource-id="11" units="100"/>
     <allocation task-id="10" resource-id="11" units="100"/>
     <allocation task-id="9" resource-id="11" units="100"/>
-    <allocation task-id="45" resource-id="13" units="90"/>
-    <allocation task-id="43" resource-id="13" units="100"/>
-    <allocation task-id="48" resource-id="13" units="100"/>
-    <allocation task-id="46" resource-id="13" units="10"/>
+    <allocation task-id="46" resource-id="13" units="90"/>
+    <allocation task-id="44" resource-id="13" units="100"/>
+    <allocation task-id="49" resource-id="13" units="100"/>
+    <allocation task-id="47" resource-id="13" units="10"/>
   </allocations>
 </project>
