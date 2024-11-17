@@ -1,0 +1,17 @@
+team,team-leader,team-member,FTE
+EE,Jakub Kakona,Jakub Kakona,1.0
+EE,Jakub Kakona,Electrical Engineer2,1.0
+ME,Roman Dvorak,Roman Dvorak,1.0
+ME,Roman Dvorak,Mechanical Engineer2,0.5
+SCI,Ondrej Ploc,Ondrej Ploc,0.5
+SCI,Ondrej Ploc,Iva Ambrozova,0.5
+SCI,Ondrej Ploc,Martin Kakona,0.8
+SCI,Ondrej Ploc,Jakub Slegl,0.5
+FW,Vit Hanousek,Vit Hanousek,1.0
+FW,Vit Hanousek,Programator2,0.5
+SUP,Iva Ambrozova,Technician1,0.5
+SUP,Iva Ambrozova,Technician2,0.5
+PROJ,Iva Ambrozova,Iva Ambrozova,0.3
+PROJ,Iva Ambrozova,Roxana,0.5
+UST,Fluktuacia,,
+PR,Iva Ambrozova,Kosmonautix,0.2
