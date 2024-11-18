@@ -119,7 +119,7 @@
           <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
       </task>
-      <task id="7" name="SSR (System Requirement Review)" note="" work="0" duration="0" start="20250609T170000Z" end="20250609T170000Z" work-start="20250609T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <task id="7" name="SRR (System Requirement Review)" note="" work="0" duration="0" start="20250609T170000Z" end="20250609T170000Z" work-start="20250609T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="5" type="FS"/>
         </predecessors>
