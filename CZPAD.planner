@@ -354,7 +354,7 @@
     <resource group="3" id="8" name="Support Team" short-name="SUP" type="1" units="0" email="" note="" std-rate="0"/>
     <resource id="9" name=".." short-name="ALL" type="1" units="0" email="" note="" std-rate="0"/>
     <resource group="3" id="10" name="Project Management" short-name="PROJ" type="1" units="0" email="" note="" std-rate="0"/>
-    <resource group="5" id="11" name="UST" short-name="UST" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="5" id="11" name="Manufacturing" short-name="MF" type="1" units="0" email="" note="" std-rate="0"/>
     <resource id="12" name=".." short-name="Admin" type="1" units="0" email="" note="" std-rate="0"/>
     <resource group="8" id="13" name="PR Team" short-name="PR" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
